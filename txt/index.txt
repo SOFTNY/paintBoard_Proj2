@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PaintBoard</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="color-option" style="background-color: #1abc9c;" data-color="#1abc9c"></div>
+  <div class="color-option" style="background-color: #3498db;" data-color="#3498db"></div>
+  <div class="color-option" style="background-color: #34495e;" data-color="#34495e"></div>
+  <div class="color-option" style="background-color: #27ae60;" data-color="#27ae60"></div>
+  <div class="color-option" style="background-color: #8e44ad;" data-color="#8e44ad"></div>
+  <div class="color-option" style="background-color: #f1c40f;" data-color="#f1c40f"></div>
+  <div class="color-option" style="background-color: #e74c3c;" data-color="#e74c3c"></div>
+  <div class="color-option" style="background-color: #95a5a6;" data-color="#95a5a6"></div>
+  <div class="color-option" style="background-color: #d35400;" data-color="#d35400"></div>
+  <div class="color-option" style="background-color: #bdc3c7;" data-color="#bdc3c7"></div>
+  <div class="color-option" style="background-color: #2ecc71;" data-color="#2ecc71"></div>
+  <div class="color-option" style="background-color: #e67e22;" data-color="#e67e22"></div>
+  
+  <!--Canvas_API 공식문서 : https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API -->
+  <canvas></canvas>
+
+  <!-- range 속성 -->
+  <input id="line-width" type="range" min="1" max="10" value="5" />
+  <!-- color 속성 -->
+  <input type="color" id="color" />
+
+
+  <button id="mode-btn">Fill</button> <!-- 그리기, 채우기 버튼 -->
+  <button id="destroy-btn">Destroy</button> <!-- 초기화 버튼 -->
+  <button id="eraser-btn">Eraser</button> <!-- 지우개 버튼 -->
+  <input type="file" accept="image/*" id="file" /> <!--accept image/*만 가져온다.-->
+  <input type="text" placeholder="Write and then double click" id="text">
+  <button id="save">Save image</button>
+  <script src="./paint.js"></script>
+</body>
+</html>

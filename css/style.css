@@ -1,0 +1,120 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+  background-color: #f6f9fc;
+  padding-top: 250px;
+  background: linear-gradient(to right, #ffeeee, #ddefbb);
+}
+
+.paper {
+  display: flex;
+  justify-content: center;
+}
+
+.items {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+canvas {
+  width: 90%;
+  height: 800px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Lobster', cursive;
+  background: linear-gradient(to right, rgb(176, 255, 7), rgb(255, 0, 174));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 50px;
+}
+
+
+#mode-btn {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  font-family: 'Lobster', cursive;
+
+}
+
+.input-range {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+input#color {
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+
+input#color::-webkit-color-swatch{
+  border-radius: 30px;
+}
+
+
+button,
+label {
+  all: unset;
+  padding: 10px 0px;
+  cursor: pointer;
+  transition: opacity linear .1s;
+  font-size: 25px;
+}
+
+button:hover {
+  opacity: 0.5;
+  transform: scale(1.4)
+}
+
+input#file {
+  transition: opacity linear .1s;
+  display: none;
+}
+
+
+input#text {
+  all: unset;
+  padding: 8px 0px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+#line-width {
+  all: unset;
+}
+
+input[type="range" i]::-webkit-slider-runnable-track {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
