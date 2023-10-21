@@ -25,7 +25,7 @@ jquery 이용
 <br>
 
 ## 🎨Result
-
+![test2](https://github.com/SOFTNY/paintBoard_Proj2/assets/111892963/8db608dc-0def-4f59-b4bb-ff8c92b9c342)
 <br>
 <br>
 
