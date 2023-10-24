@@ -84,6 +84,8 @@ ctx.restore : 그리기 상태 스택의 최상위 항목을 팝하여 가장 �
 저장된 상태가 없으면 이 메서드는 아무 작업도 수행하지 않는다.
 // https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/restore
 ```
+<br>
+<br>
 
 #### EventListener
 ```javascript
@@ -98,7 +100,11 @@ scroll : 스크롤할 때
 ```
 
 <br>
+<br>
 
 ## 개선점
 ✅글씨, 지우개 크기 조절할 수 있도록 하기 <br>
 ✅도형 도구 만들기 
+
+<br>
+<br>
