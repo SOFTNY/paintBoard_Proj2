@@ -20,7 +20,7 @@ body {
 }
 
 canvas {
-  width: 90%;
+  width: 800px;
   height: 800px;
   padding: 20px;
   background-color: white;

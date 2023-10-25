@@ -26,11 +26,10 @@ ctx.lineCap = "round"; //lineCap 선의 끝점 모양
 let isPainting = false; //그리기
 let isFilling = false; //채우기
 
-
 //마우스 움직인곳에 그리기
 function onMove(e) {
   if (isPainting) {
-    ctx.lineTo(e.offsetX, e.offsetY);//lineTo 지정된 좌표 연결 (X좌표, Y좌표)
+    ctx.lineTo(e.offsetX, e.offsetY); //lineTo 지정된 좌표 연결 (X좌표, Y좌표)
     ctx.stroke(); //선
     return;
   }
@@ -77,13 +76,13 @@ function onCanvasClick() {
   }
 }
 
-//그렸던것 모두 다 없애기 
+//그렸던것 모두 다 없애기
 function onDestroyClick() {
   ctx.fillStyle = "white";
   ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
 }
 
-//지우개 클릭 
+//지우개 클릭
 function onEraserClick() {
   ctx.strokeStyle = "white";
   isFilling = false;
@@ -102,7 +101,7 @@ function onFileChange(e) {
   };
 }
 
-//input[type="text"] 글작성 함수 
+//input[type="text"] 글작성 함수
 function onDoubleClick(e) {
   const text = textInput.value;
   if (text !== "") {
@@ -116,7 +115,7 @@ function onDoubleClick(e) {
 
 //저장함수
 function onSaveClick() {
-  const url = canvas.toDataURL(); //캔버스에 
+  const url = canvas.toDataURL(); //캔버스에
   const a = document.createElement("a"); //a태그 요소 추가
   a.href = url;
   a.download = "";
