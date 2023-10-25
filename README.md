@@ -26,7 +26,9 @@ jquery 이용
 <br>
 
 ## 🎨Result
-![test2](https://github.com/SOFTNY/paintBoard_Proj2/assets/111892963/8db608dc-0def-4f59-b4bb-ff8c92b9c342)
+![test2](https://github.com/SOFTNY/paintBoard_Proj2/assets/111892963/38238c13-66e9-4b11-83d9-462c338c2629)
+
+
 <br>
 <br>
 
@@ -103,8 +105,12 @@ scroll : 스크롤할 때
 <br>
 
 ## 개선점
-✅글씨, 지우개 크기 조절할 수 있도록 하기 <br>
+✅글씨 크기 조절할 수 있도록 하기 <br>
 ✅도형 도구 만들기 
 
 <br>
 <br>
+
+## 🔁Refactoring
+- 지우개 사이즈 조절 완료.
+- Rect 추가 => 문제가 있음.
